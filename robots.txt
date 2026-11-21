@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mafiahustle97-spec.github.io/sitemap.xml

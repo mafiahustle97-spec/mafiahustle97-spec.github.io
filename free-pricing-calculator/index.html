@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Handmade Pricing Calculator (Sheets + Excel)</title>
+<meta name="description" content="Free pricing calculator for Etsy and handmade sellers. Add materials, time and fees, and get a price that hits your margin. Google Sheets and Excel.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://mafiahustle97-spec.github.io/free-pricing-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quiet Ledger Studio">
+<meta property="og:title" content="Free Handmade Pricing Calculator (Sheets + Excel)">
+<meta property="og:description" content="Free pricing calculator for Etsy and handmade sellers. Add materials, time and fees, and get a price that hits your margin. Google Sheets and Excel.">
+<meta property="og:url" content="https://mafiahustle97-spec.github.io/free-pricing-calculator/">
+<meta property="og:image" content="https://mafiahustle97-spec.github.io/img/og/free-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Handmade Pricing Calculator (Sheets + Excel)">
+<meta name="twitter:description" content="Free pricing calculator for Etsy and handmade sellers. Add materials, time and fees, and get a price that hits your margin. Google Sheets and Excel.">
+<meta name="twitter:image" content="https://mafiahustle97-spec.github.io/img/og/free-cover.jpg">
+<meta name="theme-color" content="#1F4D43">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preload" href="/fonts/fraunces-600.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<style>@font-face{font-family:"Fraunces";src:url("/fonts/fraunces-600.ttf") format("truetype");font-weight:600 700;font-style:normal;font-display:swap}
+:root{--ever-900:#163C34;--ever-700:#1F4D43;--sage:#8DB3A0;--mint:#E8F1EC;--sand:#FAF7F2;--line:#E2DDD3;--ink:#1E2A28;--slate:#5C6B66;--terra:#A84E2C;--terra-dark:#8E3F21;--honey:#E2B04A;--white:#fff;--ok:#2F7D55;--ok-bg:#DDF0E4;--warn:#8A5A00;--warn-bg:#FBEFD2;--bad:#A23B24;--bad-bg:#F7DCD3;--serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--radius:12px;--shadow:0 1px 2px rgba(22,60,52,.06),0 6px 20px rgba(22,60,52,.07);}*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-padding-top:16px}body{margin:0;background:var(--sand);color:var(--ink);font:400 17px/1.65 var(--sans);overflow-x:hidden}img{max-width:100%;height:auto;display:block}a{color:var(--ever-700);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:var(--terra)}:focus-visible{outline:3px solid var(--honey);outline-offset:2px;border-radius:4px}h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--ever-700);line-height:1.2;letter-spacing:-.01em}h1{font-size:clamp(2rem,6vw,3.1rem);margin:.2em 0 .35em}h2{font-size:clamp(1.5rem,4.2vw,2rem);margin:2em 0 .5em}h3{font-size:1.25rem;margin:1.6em 0 .4em}h4{font-size:1rem;margin:1.4em 0 .3em}p{margin:0 0 1em}.wrap{max-width:1080px;margin:0 auto;padding:0 16px}.narrow{max-width:740px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.skip{position:absolute;left:-999px;top:0;background:var(--ever-700);color:#fff;padding:8px 12px;z-index:10}.skip:focus{left:8px}.fine{font-size:.88rem;color:var(--slate)}.kicker{font:700 .8rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--terra);margin:0}.lede{font-size:1.15rem;color:#33433F}.promo{background:var(--ever-900);color:#E8F1EC;font-size:.9rem;padding:8px 0;text-align:center}.promo a{color:#fff;font-weight:600}.promo strong{color:#fff}.site-head{background:var(--white);border-bottom:1px solid var(--line)}.head-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 20px;padding-top:10px;padding-bottom:10px}.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ever-700);font:600 1.15rem/1 var(--serif)}.logo-mark{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--ever-700);color:var(--sand);font:700 1.2rem/1 var(--serif);box-shadow:inset 0 -4px 0 var(--honey)}.main-nav{display:flex;gap:4px 14px;flex-wrap:wrap}.main-nav a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.9rem;padding:8px 2px;min-height:44px;display:inline-flex;align-items:center}.main-nav a[aria-current=page]{color:var(--ever-700);box-shadow:inset 0 -2px 0 var(--honey)}.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:4px;margin:14px auto 0;padding:0;font-size:.85rem;color:var(--slate)}.crumbs li+li::before{content:"›";margin-right:4px;color:var(--slate)}.crumbs a{color:var(--slate)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:650;font-size:1rem;text-decoration:none;line-height:1.2;text-align:center;border:2px solid transparent}.btn-primary{background:var(--terra);color:#fff}.btn-primary:hover{background:var(--terra-dark);color:#fff}.btn-ghost{border-color:var(--ever-700);color:var(--ever-700);background:#fff}.btn-ghost:hover{background:var(--mint);color:var(--ever-700)}.btn-light{background:#fff;color:var(--ever-900)}.btn-light:hover{background:var(--mint);color:var(--ever-900)}.btn-link{font-weight:600}.actions{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;margin:1.4em 0 .6em}.hero{background:var(--ever-900);color:#E8F1EC;padding:44px 0 0;overflow:hidden}.hero h1{color:#fff;max-width:16ch}.hero .lede{color:#D6E6DD;max-width:46ch}.hero .kicker{color:var(--honey)}.hero-grid{display:grid;gap:28px}.hero-img{border-radius:var(--radius) var(--radius) 0 0;box-shadow:0 10px 40px rgba(0,0,0,.25)}.hero .fine{color:#C7DCD1}.trust{display:flex;flex-wrap:wrap;gap:6px 18px;padding:0;margin:0 0 1em;list-style:none;font-size:.92rem;color:#D6E6DD}.trust li::before{content:"✓ ";color:var(--honey);font-weight:700}.section{padding:56px 0}.section-alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section h2:first-child,.section .kicker+h2{margin-top:.2em}.grid-3{display:grid;gap:18px}.feature{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}.section-alt .feature{background:var(--sand)}.feature h3{margin-top:0}.feature p:last-child{margin-bottom:0}.split{display:grid;gap:24px;align-items:center}.shot{border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}figure{margin:1.6em 0}figcaption{font-size:.85rem;color:var(--slate);margin-top:8px}.page-head{padding-top:28px}.cards{list-style:none;padding:0;margin:0;display:grid;gap:14px}.card a{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px 18px 20px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);text-decoration:none;color:var(--ink);transition:border-color .15s,box-shadow .15s}.card a:hover{border-color:var(--sage);box-shadow:var(--shadow);color:var(--ink)}.card-kicker{font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--terra)}.card-title{font:600 1.15rem/1.3 var(--serif);color:var(--ever-700)}.card-desc{font-size:.93rem;color:var(--slate)}.table-wrap{overflow-x:auto;margin:1.4em 0;border:1px solid var(--line);border-radius:10px;background:#fff;-webkit-overflow-scrolling:touch}table{border-collapse:collapse;width:100%;font-size:.93rem;font-variant-numeric:tabular-nums}th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}thead th{background:var(--ever-700);color:#fff;font-weight:650;font-size:.85rem;vertical-align:bottom}tbody th{font-weight:600}tbody tr:last-child>*{border-bottom:0}.r{text-align:right}table.wide{min-width:560px}td.r,th.r{white-space:nowrap}.c{text-align:center}td.small{font-size:.82rem;color:var(--slate)}.editions{min-width:620px}.editions-wrap{display:none}.editions thead th{background:#fff;color:var(--ever-700);font:600 1.2rem/1.2 var(--serif);border-bottom:2px solid var(--ever-700);padding-top:18px}.editions .price{display:block;font:700 1.7rem/1.2 var(--serif);color:var(--ink);margin-top:4px}.editions .tabs{display:block;font:400 .85rem var(--sans);color:var(--slate)}.editions .rec{background:#F3F8F5}.editions thead .rec{position:relative;padding-top:30px}.editions .badge{position:absolute;top:6px;left:50%;transform:translateX(-50%)}.badge{display:inline-block;background:var(--honey);color:var(--ink);font:700 .72rem/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;padding:6px 10px;border-radius:999px;white-space:nowrap}.yes{color:var(--ok);font-weight:800}.no{color:#8B9792}.editions .buy td{padding:14px 8px}.editions .buy .btn{padding:10px 14px;font-size:.92rem;min-height:44px}.ed-cards{display:grid;gap:16px;margin:1.4em 0}.ed-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;display:flex;flex-direction:column}.ed-card h3{margin:0}.ed-card .btn{margin-top:auto}.ed-rec{border:2px solid var(--ever-700);box-shadow:var(--shadow)}.ed-rec .badge{position:absolute;top:-12px;left:20px}.ed-price{font:700 2rem/1.1 var(--serif);color:var(--ink);margin:.3em 0}.ed-price span{font:400 .9rem var(--sans);color:var(--slate)}.ticks{list-style:none;padding:0;margin:0 0 1.2em}.ticks li{padding-left:1.5em;position:relative;margin:.35em 0}.ticks li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}.code-note{background:var(--warn-bg);color:#5E3E00;border-radius:10px;padding:10px 14px;font-size:.95rem}.art-head{padding-top:20px}.byline{font-size:.9rem;color:var(--slate)}.hero-fig{max-width:900px;margin:1.2em auto 1.6em}.hero-fig img{border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow)}.prose{font-size:1.06rem}.prose ul,.prose ol{padding-left:1.3em;margin:0 0 1.2em}.prose li{margin:.35em 0}.prose figure img{border-radius:10px;border:1px solid var(--line);background:#fff}.prose blockquote{margin:1.4em 0;padding:4px 18px;border-left:4px solid var(--sage);color:#33433F}.checklist{list-style:none;padding-left:0!important}.checklist li{position:relative;padding-left:1.9em}.checklist li::before{content:"";position:absolute;left:0;top:.3em;width:1.1em;height:1.1em;border:2px solid var(--ever-700);border-radius:4px;background:#fff}.toc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px 18px;margin:0 0 1.6em}.toc summary{font-weight:700;cursor:pointer;color:var(--ever-700);min-height:32px}.toc ol{margin:.6em 0 .2em;padding-left:1.2em;font-size:.95rem}.box{border-radius:var(--radius);padding:16px 18px;margin:1.6em 0;border:1px solid var(--line)}.box>:last-child{margin-bottom:0}.box-title{font-weight:700;margin-bottom:.4em}.box-note{background:var(--mint);border-color:#CFE2D7}.box-formula{background:var(--mint);border-color:#CFE2D7;text-align:center;font-size:1.08rem}.box-formula p{margin:.3em 0}.box-formula strong{font-family:var(--serif);font-weight:600;color:var(--ever-700)}.box-warning{background:var(--warn-bg);border-color:#F0DDB0}.box-example{background:#fff}code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;background:var(--mint);padding:.1em .35em;border-radius:5px}.cta{border-radius:16px;padding:22px 20px;margin:2em 0;border:1px solid var(--line)}.cta-free{background:#fff;border:2px solid var(--sage)}.cta-pro{background:var(--ever-900);color:#E8F1EC;border:0}.cta-pro .cta-title{color:#fff}.cta-pro .cta-kicker{color:var(--honey)}.cta-pro .btn-link{color:#fff}.cta-pro .btn-primary{background:var(--honey);color:var(--ink)}.cta-pro .btn-primary:hover{background:#EBC36F;color:var(--ink)}.cta-kicker{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--terra);margin:0 0 .3em}.cta-title{font:600 1.35rem/1.25 var(--serif);color:var(--ever-700);margin:0 0 .4em}.cta-actions{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin:1em 0 0}.disclaimer-box{font-size:.9rem;color:var(--slate);border-top:1px solid var(--line);margin-top:2.4em;padding-top:1.2em}.related{padding:32px 16px 56px}.related h2{margin-top:.4em}.faq details{background:#fff;border:1px solid var(--line);border-radius:10px;margin:10px 0}.faq summary{cursor:pointer;padding:14px 44px 14px 16px;font-weight:650;position:relative;list-style:none;min-height:48px}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";position:absolute;right:16px;top:10px;font-size:1.4rem;color:var(--ever-700)}.faq details[open] summary::after{content:"–"}.faq details>div{padding:0 16px 6px}.calc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);display:grid;gap:20px}.calc fieldset{border:0;padding:0;margin:0;display:grid;gap:12px}.calc legend{font:600 1.15rem var(--serif);color:var(--ever-700);margin-bottom:6px;padding:0}.calc label{display:grid;gap:4px;font-size:.92rem;font-weight:600}.calc label span{font-weight:400;color:var(--slate);font-size:.82rem}.calc input,.calc select{font:inherit;font-size:1rem;padding:10px 12px;border:1px solid #BFB8AA;border-radius:8px;background:#fff;color:var(--ink);min-height:44px;width:100%}.calc input:focus,.calc select:focus{border-color:var(--ever-700)}.calc-out{background:var(--mint);border-radius:12px;padding:18px}.calc-out .big{font:700 2.6rem/1 var(--serif);color:var(--ever-700);margin:.15em 0}.calc-out dl{display:grid;grid-template-columns:1fr auto;gap:6px 12px;margin:14px 0 0;font-variant-numeric:tabular-nums}.calc-out dt{color:#33433F}.calc-out dd{margin:0;text-align:right;font-weight:700}.verdict{display:inline-block;padding:4px 10px;border-radius:999px;font-weight:700;font-size:.9rem}.v-ok{background:var(--ok-bg);color:var(--ok)}.v-warn{background:var(--warn-bg);color:var(--warn)}.v-bad{background:var(--bad-bg);color:var(--bad)}.two{display:grid;gap:12px;grid-template-columns:1fr 1fr}.site-foot{background:var(--ever-900);color:#CFE3D8;margin-top:40px;padding:40px 0 24px;font-size:.92rem}.site-foot a{color:#fff}.site-foot .fine{color:#B9D0C4}.foot-brand{font:600 1.2rem var(--serif);color:#fff}.foot-grid{display:grid;gap:24px}.foot-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 20px}.foot-links a{display:inline-block;padding:8px 0}.foot-legal{border-top:1px solid rgba(255,255,255,.15);margin-top:24px;padding-top:16px;font-size:.82rem;color:#B9D0C4}.link-list li{margin:.5em 0}@media (min-width:720px){body{font-size:18px}.editions-wrap{display:block}.only-mobile{display:none}.grid-3{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr 1fr}.split.rev>:first-child{order:2}.ed-cards{grid-template-columns:repeat(3,1fr)}.calc{grid-template-columns:1.1fr 1fr;padding:28px}.foot-grid{grid-template-columns:1.4fr 1fr}.cta{padding:28px}}@media (min-width:980px){.cards.cards-3,.related .cards{grid-template-columns:repeat(3,1fr)}.hero-grid{grid-template-columns:1fr}}@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}@media print{.site-head,.site-foot,.promo,.cta,.toc{display:none}}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Free Etsy Fee & Handmade Pricing Calculator","description":"A free pricing calculator spreadsheet for Etsy and handmade sellers: materials, labour, overhead and platform fees in, suggested price out. Google Sheets and Excel.","image":["https://mafiahustle97-spec.github.io/img/og/free-cover.jpg"],"brand":{"@type":"Brand","name":"Quiet Ledger Studio"},"category":"Spreadsheet template","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://quietledgerstudio.gumroad.com/l/free-pricing-calculator"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter $0 at checkout. If you'd like to support the shop, the suggested amount is $3, but the file is the same either way."}},{"@type":"Question","name":"Does it work in Google Sheets and Excel?","acceptedAnswer":{"@type":"Answer","text":"Yes, both, plus LibreOffice. Apple Numbers is not supported."}},{"@type":"Question","name":"Do I need to sell on Etsy?","acceptedAnswer":{"@type":"Answer","text":"No. It covers 8 sales channels, including Shopify, craft fairs, wholesale and Instagram, and the fee table is editable."}},{"@type":"Question","name":"Does it work for my craft?","acceptedAnswer":{"@type":"Answer","text":"If you make a physical product from materials you buy, yes: candles, soap, jewellery, ceramics, stickers, prints, sewing, crochet and more. Units include grams, ml, ounces, pieces, sheets and metres."}},{"@type":"Question","name":"Why is the suggested price higher than I expected?","acceptedAnswer":{"@type":"Answer","text":"Because it counts your time and overhead, not only materials, and it takes platform fees out before your margin. If the number looks high, check your labour minutes and hourly rate first, then compare channels on the Fee Compare tab."}},{"@type":"Question","name":"What does \"Lower margin\" mean?","acceptedAnswer":{"@type":"Answer","text":"Your fee % plus target margin is close to 100%, so no price can hit it. Lower the target margin and the suggested price will appear."}},{"@type":"Question","name":"How many products can I price?","acceptedAnswer":{"@type":"Answer","text":"One at a time, with up to 10 materials each. Save a copy per product, or use Maker Profit OS to price up to 60 products from one shared materials list."}},{"@type":"Question","name":"Do I have to give my email?","acceptedAnswer":{"@type":"Answer","text":"Gumroad asks for an email to deliver every download, free or paid. You can unsubscribe from shop emails at any time from any email's footer."}},{"@type":"Question","name":"Is this tax or financial advice?","acceptedAnswer":{"@type":"Answer","text":"No. It is a calculator. The price it suggests depends on the numbers you enter."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mafiahustle97-spec.github.io/"},{"@type":"ListItem","position":2,"name":"Free pricing calculator","item":"https://mafiahustle97-spec.github.io/free-pricing-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="promo" data-expires="2026-12-01T23:59:59Z"><div class="wrap">Launch week: <strong>30% off</strong> every edition of Maker Profit OS with code <strong>LAUNCH30</strong> until 1 December 2026. <a href="/maker-profit-os/#editions">See editions</a></div></div>
+<header class="site-head">
+<div class="wrap head-inner">
+<a class="logo" href="/"><span class="logo-mark" aria-hidden="true">Q</span><span class="logo-text">Quiet Ledger Studio</span></a>
+<nav class="main-nav" aria-label="Main"><a href="/free-pricing-calculator/" aria-current="page">Free calculator</a><a href="/maker-profit-os/">Spreadsheet</a><a href="/guides/">Guides</a><a href="/about/">About</a></nav>
+</div>
+</header>
+<nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Free pricing calculator</li></ol></nav>
+<main id="main">
+<section class="wrap page-head">
+<p class="kicker">Free for Google Sheets and Excel</p>
+<h1>Free Handmade Pricing Calculator</h1>
+<p class="lede">Type in what you paid for your materials, how long one item takes and where you sell it. The calculator shows your real cost per item and a suggested price that hits your target margin after fees.</p>
+<div class="actions">
+<a class="btn btn-primary" href="https://quietledgerstudio.gumroad.com/l/free-pricing-calculator?utm_source=quietledger&amp;utm_medium=site&amp;utm_campaign=free_calculator" rel="noopener">Get the free calculator</a>
+<a class="btn-link" href="#try-it">Or try the quick version below</a>
+</div>
+<p class="fine">$0 on Gumroad (a $3 tip is optional). Instant download: one .xlsx file that opens in Google Sheets, Excel and LibreOffice.</p>
+</section>
+
+<section class="wrap">
+<figure><img src="/img/free-calculator.webp" alt="The free Handmade Pricing Calculator in Google Sheets: materials list, labour, overhead, sales channel and target margin inputs, with the suggested price card on the right" width="1000" height="1080" fetchpriority="high" decoding="async"><figcaption>The Pricing Calculator tab, filled in with the worked candle example used throughout this site.</figcaption></figure>
+</section>
+
+<section class="section" id="try-it">
+<div class="wrap">
+<h2>Try the formula now</h2>
+<p>This quick web version uses the same formula as the spreadsheet. Nothing you type leaves your browser. The download adds a 10-line materials list with unit conversion, a result card you can screenshot, and a fee comparison across 8 channels.</p>
+<form class="calc" id="calc" onsubmit="return false" aria-describedby="calc-note">
+<div>
+<fieldset>
+<legend>One item</legend>
+<label>Materials per item ($)<span>Everything that goes into one item, including packaging</span><input id="c-mat" type="number" inputmode="decimal" min="0" step="0.01" value="4.45"></label>
+<label>Other direct costs per item ($)<span>Gift box, care card, dust bag. Leave 0 if none</span><input id="c-other" type="number" inputmode="decimal" min="0" step="0.01" value="0"></label>
+<div class="two">
+<label>Minutes per item<input id="c-min" type="number" inputmode="numeric" min="0" step="1" value="15"></label>
+<label>Hourly rate ($)<input id="c-rate" type="number" inputmode="decimal" min="0" step="0.5" value="20"></label>
+</div>
+<div class="two">
+<label>Overhead %<span>Start at 10</span><input id="c-oh" type="number" inputmode="decimal" min="0" max="100" step="1" value="10"></label>
+<label>Target margin %<span>After fees</span><input id="c-margin" type="number" inputmode="decimal" min="0" max="90" step="1" value="35"></label>
+</div>
+<label>Where you sell it<select id="c-channel">
+<option value="0.095|0.45" selected>Etsy (6.5% + 3% + $0.25 + $0.20)</option>
+<option value="0.029|0.30">Shopify / own website (2.9% + $0.30)</option>
+<option value="0.15|0">Amazon Handmade (15%)</option>
+<option value="0.026|0.15">Craft fair, card reader (2.6% + $0.15)</option>
+<option value="0|0">Craft fair cash or wholesale (no fees)</option>
+<option value="0.0349|0.49">Instagram / DM via PayPal (3.49% + $0.49)</option>
+</select></label>
+<label>Your current price ($)<span>Optional: see what you keep today</span><input id="c-price" type="number" inputmode="decimal" min="0" step="0.01" value="12"></label>
+</fieldset>
+</div>
+<div class="calc-out" aria-live="polite">
+<p class="kicker">Suggested price</p>
+<p class="big" id="o-price">19.99</p>
+<p class="fine" id="o-sub">at a 35% target margin after 9.5% fees</p>
+<dl>
+<dt>Labour</dt><dd id="o-lab">5.00</dd>
+<dt>Overhead</dt><dd id="o-oh">0.95</dd>
+<dt>Full cost per item</dt><dd id="o-full">10.40</dd>
+<dt>Fees at suggested price</dt><dd id="o-fees">2.35</dd>
+<dt>Profit at suggested price</dt><dd id="o-prof">7.24</dd>
+<dt>Wholesale (full cost × 2)</dt><dd id="o-whole">20.80</dd>
+<dt>Profit at your current price</dt><dd id="o-cur">0.01</dd>
+<dt>Verdict</dt><dd><span class="verdict v-warn" id="o-verdict">Under target</span></dd>
+</dl>
+<p class="fine" id="calc-note">Example numbers: an 8 oz soy candle. Fee defaults are US, as of November 2026. Not tax or financial advice.</p>
+<a class="btn btn-primary" href="https://quietledgerstudio.gumroad.com/l/free-pricing-calculator?utm_source=quietledger&amp;utm_medium=site&amp;utm_campaign=free_calculator" rel="noopener">Get the spreadsheet version</a>
+</div>
+</form>
+</div>
+</section>
+
+<section class="section section-alt">
+<div class="wrap narrow prose">
+<h2>What the calculator does</h2>
+<ul class="ticks">
+<li><strong>Costs your materials properly.</strong> Enter what you paid and how much you got (a 4,536 g bag of wax for $32, say). It works out the cost per gram, ml, piece or sheet, then multiplies by what one item uses.</li>
+<li><strong>Counts your time.</strong> Minutes per item at your hourly rate. If your time is free, the price is wrong.</li>
+<li><strong>Adds overhead.</strong> A percentage for electricity, tools, the studio corner and everything else you can't pin on one item.</li>
+<li><strong>Takes fees out of the buyer's price, not your pocket.</strong> Percentage fees and fixed per-order fees come off before your margin.</li>
+<li><strong>Gives a verdict on your current price.</strong> <em>Losing money</em>, <em>Under target</em> or <em>On target</em>.</li>
+<li><strong>Suggests wholesale and retail prices</strong> using the common 2×2 rule.</li>
+</ul>
+
+<h2>The pricing formula, step by step</h2>
+<ol>
+<li><strong>Materials:</strong> for each material, purchase price ÷ purchase quantity × amount used per item.</li>
+<li><strong>Other direct costs:</strong> per-item extras such as a gift box or care card.</li>
+<li><strong>Labour:</strong> minutes per item ÷ 60 × your hourly rate.</li>
+<li><strong>Overhead:</strong> (materials + other direct + labour) × overhead %.</li>
+<li><strong>Full cost</strong> = the four layers added up.</li>
+<li><strong>Suggested price</strong> = (full cost + fixed fees) ÷ (1 − fee % − target margin), rounded up to .99.</li>
+</ol>
+<p>The full reasoning, with a second worked example, is in <a href="/how-to-price-handmade-products/">How to price handmade products</a>.</p>
+
+<h2>Fee presets for 8 sales channels</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Fee presets table"><table>
+<thead><tr><th scope="col">Channel</th><th scope="col" class="r">% fees</th><th scope="col" class="r">Fixed per order</th><th scope="col" class="r">Per item</th></tr></thead>
+<tbody>
+<tr><th scope="row">Etsy</th><td class="r">6.5% + 3.0%</td><td class="r">$0.25</td><td class="r">$0.20</td></tr>
+<tr><th scope="row">Shopify (Basic, online)</th><td class="r">2.9%</td><td class="r">$0.30</td><td class="r">–</td></tr>
+<tr><th scope="row">Amazon Handmade</th><td class="r">15%</td><td class="r">–</td><td class="r">–</td></tr>
+<tr><th scope="row">Own website (Stripe)</th><td class="r">2.9%</td><td class="r">$0.30</td><td class="r">–</td></tr>
+<tr><th scope="row">Craft fair (card reader)</th><td class="r">2.6%</td><td class="r">$0.15</td><td class="r">–</td></tr>
+<tr><th scope="row">Craft fair (cash)</th><td class="r">0%</td><td class="r">–</td><td class="r">–</td></tr>
+<tr><th scope="row">Wholesale / stockist</th><td class="r">0%</td><td class="r">–</td><td class="r">–</td></tr>
+<tr><th scope="row">Instagram / DM (PayPal)</th><td class="r">3.49%</td><td class="r">$0.49</td><td class="r">–</td></tr>
+</tbody></table></div>
+<p class="fine">US defaults set November 2026. Fees change and differ by country and plan, so every cell is editable. Check each platform's own fee page. Why Etsy's line has four parts is explained in <a href="/etsy-fees-calculator-explained/">Etsy fees explained</a>.</p>
+<figure><img src="/img/free-fee-compare.webp" alt="Fee Compare tab: the same 12.00 sale on 9 channels, with fees, what you receive, profit after cost and margin, plus a bar chart of profit per sale by channel" width="1400" height="565" loading="lazy" decoding="async"><figcaption>Fee Compare: the same $12 candle on every channel. On Etsy it keeps $0.01; at a cash craft fair, $1.60.</figcaption></figure>
+
+<h2>Worked example: an 8 oz soy candle</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Worked candle example"><table>
+<thead><tr><th scope="col">Step</th><th scope="col" class="r">Amount</th></tr></thead>
+<tbody>
+<tr><th scope="row">Materials (200 g wax, 18 ml fragrance, wick, jar, lid, label)</th><td class="r">$4.45</td></tr>
+<tr><th scope="row">Labour: 15 min at $20/hr</th><td class="r">$5.00</td></tr>
+<tr><th scope="row">Overhead: 10% of $9.45</th><td class="r">$0.95</td></tr>
+<tr><th scope="row">Full cost per candle</th><td class="r"><strong>$10.40</strong></td></tr>
+<tr><th scope="row">(10.40 + 0.45) ÷ (1 − 0.095 − 0.35)</th><td class="r">$19.55</td></tr>
+<tr><th scope="row">Suggested Etsy price, rounded up to .99</th><td class="r"><strong>$19.99</strong></td></tr>
+</tbody></table></div>
+<p>At $12, Etsy's fees are $1.59 and the candle keeps one cent. At $19.99 the fees are $2.35 and the profit is $7.24, a 36.2% margin. The full teardown, including a 4 oz tin and what batching does to the price, is in <a href="/candle-pricing-formula/">The candle pricing formula</a>.</p>
+
+<h2>How to open it in Google Sheets or Excel</h2>
+<ol>
+<li>Download the .xlsx from Gumroad. It lands in your Gumroad library and your inbox.</li>
+<li><strong>Google Sheets:</strong> upload it to Google Drive, then right-click it and choose Open with, then Google Sheets. Use File, then Save as Google Sheets if you want an editable copy.</li>
+<li><strong>Excel:</strong> open the file directly. Excel 2019, 2021 and 365 on Windows and Mac are supported, as is LibreOffice 7.4 or later.</li>
+<li>Type in the white cells only. Green cells calculate on their own and are locked so you can't break them.</li>
+</ol>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap narrow">
+<h2 id="faq">Frequently asked questions</h2>
+<div class="faq"><details><summary>Is it really free?</summary><div><p>Yes. Enter $0 at checkout. If you'd like to support the shop, the suggested amount is $3, but the file is the same either way.</p></div></details><details><summary>Does it work in Google Sheets and Excel?</summary><div><p>Yes, both, plus LibreOffice. Apple Numbers is not supported.</p></div></details><details><summary>Do I need to sell on Etsy?</summary><div><p>No. It covers 8 sales channels, including Shopify, craft fairs, wholesale and Instagram, and the fee table is editable.</p></div></details><details><summary>Does it work for my craft?</summary><div><p>If you make a physical product from materials you buy, yes: candles, soap, jewellery, ceramics, stickers, prints, sewing, crochet and more. Units include grams, ml, ounces, pieces, sheets and metres.</p></div></details><details><summary>Why is the suggested price higher than I expected?</summary><div><p>Because it counts your time and overhead, not only materials, and it takes platform fees out before your margin. If the number looks high, check your labour minutes and hourly rate first, then compare channels on the Fee Compare tab.</p></div></details><details><summary>What does "Lower margin" mean?</summary><div><p>Your fee % plus target margin is close to 100%, so no price can hit it. Lower the target margin and the suggested price will appear.</p></div></details><details><summary>How many products can I price?</summary><div><p>One at a time, with up to 10 materials each. Save a copy per product, or use Maker Profit OS to price up to 60 products from one shared materials list.</p></div></details><details><summary>Do I have to give my email?</summary><div><p>Gumroad asks for an email to deliver every download, free or paid. You can unsubscribe from shop emails at any time from any email's footer.</p></div></details><details><summary>Is this tax or financial advice?</summary><div><p>No. It is a calculator. The price it suggests depends on the numbers you enter.</p></div></details></div>
+</div>
+</section>
+
+<section class="section section-alt">
+<div class="wrap narrow">
+<p class="kicker">Next step</p>
+<h2>Want every product in one place?</h2>
+<p>The calculator prices one product at a time. Maker Profit OS prices up to 60 products from one shared materials list, works out the platform fees on every order you log, and builds your monthly P&amp;L, tax set-aside and dashboard as you go.</p>
+<p class="code-note" data-expires="2027-06-30T23:59:59Z">Already using the free calculator? Code <strong>CALC20</strong> takes 20% off any edition until 30 June 2027.</p>
+<div class="actions"><a class="btn btn-primary" href="https://quietledgerstudio.gumroad.com/l/maker-profit-os-pro?utm_source=quietledger&amp;utm_medium=site&amp;utm_campaign=free_calculator" rel="noopener">Get Maker Profit OS Pro ($39)</a><a class="btn-link" href="/maker-profit-os/#editions">Compare editions</a></div>
+</div>
+</section>
+
+</main>
+<footer class="site-foot">
+<div class="wrap foot-grid">
+<div>
+<p class="foot-brand">Quiet Ledger Studio</p>
+<p>Spreadsheets and plain-English guides that help handmade sellers price for profit and keep simple books.</p>
+<p class="fine">Product help: reply to your Gumroad receipt. Support covers file problems only.</p>
+</div>
+<nav aria-label="Footer">
+<ul class="foot-links">
+<li><a href="/free-pricing-calculator/">Free pricing calculator</a></li>
+<li><a href="/maker-profit-os/">Maker Profit OS</a></li>
+<li><a href="/guides/">Guides</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/privacy/">Privacy</a></li>
+<li><a href="/disclaimer/">Disclaimer</a></li>
+</ul>
+</nav>
+</div>
+<div class="wrap foot-legal">
+<p>Not tax, legal or accounting advice. Fee figures are US defaults as of November 2026; check each platform's current fee page. Quiet Ledger Studio is not affiliated with or endorsed by Etsy, Inc., Shopify, Amazon, PayPal or any platform named. Etsy is a trademark of Etsy, Inc.</p>
+<p>© 2026 Quiet Ledger Studio</p>
+</div>
+</footer>
+<script>(function(){var n=Date.now();document.querySelectorAll('[data-expires]').forEach(function(e){if(n>Date.parse(e.getAttribute('data-expires')))e.remove();});})();</script><script>(function(){
+var f=document.getElementById('calc');if(!f)return;
+function v(id){var n=parseFloat(document.getElementById(id).value);return isFinite(n)&&n>=0?n:0}
+function m(n){return n.toFixed(2)}
+function set(id,t){document.getElementById(id).textContent=t}
+function run(){
+function c(n){return Math.round(n*100+1e-7)/100}
+var mat=v('c-mat'),oth=v('c-other'),lab=c(v('c-min')/60*v('c-rate')),oh=c((mat+oth+lab)*v('c-oh')/100);
+var full=c(mat+oth+lab+oh),ch=document.getElementById('c-channel').value.split('|');
+var fee=parseFloat(ch[0]),fix=parseFloat(ch[1]),mg=Math.min(v('c-margin'),90)/100,d=1-fee-mg;
+set('o-lab',m(lab));set('o-oh',m(oh));set('o-full',m(full));set('o-whole',m(Math.round(full*200)/100));
+set('o-sub','at a '+Math.round(mg*100)+'% target margin after '+(Math.round(fee*1000)/10)+'% fees');
+var price=null;
+if(d<=0.05){set('o-price','Lower margin');set('o-fees','–');set('o-prof','–')}
+else{price=Math.ceil((full+fix)/d+0.01-1e-9)-0.01;set('o-price',m(price));
+var fees=price*fee+fix;set('o-fees',m(fees));set('o-prof',m(price-fees-full))}
+var cur=v('c-price'),el=document.getElementById('o-verdict');
+if(cur>0){var p=cur-cur*fee-fix-full,r=p/cur;set('o-cur',m(p));
+if(p<0){el.textContent='Losing money';el.className='verdict v-bad'}
+else if(r<mg-0.005){el.textContent='Under target';el.className='verdict v-warn'}
+else{el.textContent='On target';el.className='verdict v-ok'}}
+else{set('o-cur','–');el.textContent='Add a price';el.className='verdict'}
+}
+f.addEventListener('input',run);f.addEventListener('change',run);run();
+})();
+</script>
+</body>
+</html>
